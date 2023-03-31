@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Import main styles -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- SCRIPTS -->
+  <!--Import jQuery-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap Sripts -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- Site Sripts -->
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/jquery-ui.js"></script>
+  <script src="assets/js/selectToUISlider.jQuery.js"></script>
+  <script src="assets/js/functions.js"></script>
+
+  <title>Shop | Order</title>
+
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalRequestCall" aria-labelledby="modalRequestCallLabel" tabindex="-1"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalRequestCallLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="form-template">
+            <div class="form-group">
+              <label for="inputName">Name</label>
+              <input type="text" class="form-control" id="inputName" placeholder="Your Name">
+            </div> <!-- //.form-group -->
+            <div class="form-group">
+              <label for="inputPhone">Phone</label>
+              <input type="tel" class="form-control" id="inputPhone" placeholder="Your Phone">
+            </div> <!-- //.form-group -->
+            <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
+            </div> <!-- //.form-group -->
+            <div class="form-group">
+              <label for="inputMessage">Message</label>
+              <textarea type="text" class="form-control" id="inputMessage" placeholder="Your Message..."></textarea>
+            </div> <!-- //.form-group -->
+            <button type="button" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
+  <header class="header">
+    <div class="top-header">
+      Get a $ 300 bonus to your account
+    </div> <!-- //.top-header -->
+
+    <nav class="navbar navbar-expand-lg d-block">
+      <div class="header-info">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainMenu"
+            aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+          </button>
+          <form action="#" class="header-search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="What do you need to find?">
+              <button type="button" class="btn"><img src="assets/img/icon_loop.png" alt="search"></button>
+            </div>
+          </form>
+          <dl class="header-contact">
+            <dt><a href="tel:99611100305"><img src="assets/img/icon_phone.png" alt="phone"
+                  class="img-icon">9-961-110-03-05</a></dt>
+            <dd><img src="assets/img/icon_online.png" alt="online" class="img-icon">Daily 09:00 - 18:00</dd>
+          </dl>
+          <dl class="header-contact">
+            <dt><a href="cart.html"><img src="assets/img/icon_cart.png" alt="cart" class="img-icon">Cart: 4 products</a>
+            </dt>
+            <dd>in the amount of 15,000 $</dd>
+          </dl>
+          <a href="#modalRequestCall" class="btn btn-default" data-toggle="modal">Request a call</a>
+        </div> <!-- //.container -->
+      </div> <!-- //.header-info -->
+
+      <div class="main-menu collapse navbar-collapse" id="mainMenu">
+        <div class="container">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalog.html">SHOP</a>
+              <button class="submenu-toggler collapsed" type="button" data-toggle="collapse" data-target="#subMenu"
+                aria-controls="subMenu" aria-expanded="false" aria-label="Toggle submenu"><i
+                  class="bi bi-plus-lg"></i></button>
+              <ul class="sub-menu collapse" id="subMenu">
+                <li class="active"><a href="catalog.html">SET Solutions <i class="bi bi-chevron-right"></i></a></li>
+                <li><a href="catalog.html">Lifting Threads <i class="bi bi-chevron-right"></i></a></li>
+                <li><a href="catalog.html">Biorevitalization <i class="bi bi-chevron-right"></i></a></li>
+                <li><a href="catalog.html">Cosmetology <i class="bi bi-chevron-right"></i></a></li>
+                <li><a href="catalog.html">Derma filler <i class="bi bi-chevron-right"></i></a></li>
+                <li><a href="catalog.html">Devices <i class="bi bi-chevron-right"></i></a></li>
+                <li><a href="catalog.html">Fat dissolving <i class="bi bi-chevron-right"></i></a></li>
+                <li><a href="catalog.html">Hair Treatment <i class="bi bi-chevron-right"></i></a></li>
+                <li><a href="catalog.html">Injection <i class="bi bi-chevron-right"></i></a></li>
+                <li><a href="catalog.html">Other Categories <i class="bi bi-chevron-right"></i></a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">AFFILIATE PROGRAM</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">WHOLESALE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">HELP</a>
+            </li>
+          </ul>
+        </div> <!-- //.container -->
+      </div>
+    </nav>
+  </header>
+  <div class="breadcrumbs-wrapper">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Home</a></li>
+        <li><i class="bi bi-chevron-right"></i></li>
+        <li>Bread crumbs</li>
+      </ul>
+    </div>
+  </div> <!-- //.breadcrumbs-wrapper -->
+
+  <section class="page-section cart">
+    <div class="container">
+      <h2 class="section-title text-left">Ordering</h2>
+      <div class="cart-table table-responsive-lg">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Photo</th>
+              <th>Name</th>
+              <th>Amount</th>
+              <th>Valuable</th>
+              <th>Total</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a href="product.html" class="product-image-link"><img src="assets/img/product.jpg" alt="product"></a>
+              </td>
+              <td><a href="product.html" class="product-title-link">Name goods</a></td>
+              <td>
+                <div class="product-amount">
+                  <div class="input-group">
+                    <input type="button" value="-" class="btn button-minus" data-field="quantity">
+                    <input type="number" step="1" max="" value="1" name="quantity">
+                    <input type="button" value="+" class="btn button-plus" data-field="quantity">
+                  </div>
+                </div> <!-- //.product-amount -->
+              </td>
+              <td>$ 290</td>
+              <td>$ 290</td>
+              <td><a href="#" class="product-delete-btn"><i class="bi bi-x-lg"></i><span>Delete item</span></a></td>
+            </tr>
+            <tr>
+              <td scope="row">
+                <a href="product.html" class="product-image-link"><img src="assets/img/product.jpg" alt="product"></a>
+              </td>
+              <td><a href="product.html" class="product-title-link">Name goods</a></td>
+              <td>
+                <div class="product-amount">
+                  <div class="input-group">
+                    <input type="button" value="-" class="btn button-minus" data-field="quantity">
+                    <input type="number" step="1" max="" value="1" name="quantity">
+                    <input type="button" value="+" class="btn button-plus" data-field="quantity">
+                  </div>
+                </div> <!-- //.product-amount -->
+              </td>
+              <td>$ 290</td>
+              <td>$ 290</td>
+              <td><a href="#" class="product-delete-btn"><i class="bi bi-x-lg"></i><span>Delete item</span></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div> <!-- //.table-responsive -->
+      <div class="order-wrapper">
+        <h4>ESTIMATE SHIPPING AND TAX</h4>
+        <div class="subtitle">Enter your destination to get a shipping estimate</div>
+        <form action="#" class="form-template mt-4 mb-3">
+          <div class="row">
+            <div class="form-group col-lg-4">
+              <label for="inputCountry">Сountry</label>
+              <input type="text" class="form-control" id="inputCountry" placeholder="United States">
+            </div> <!-- //.form-group -->
+            <div class="form-group col-lg-4">
+              <label for="inputState">STATE/PROVINCE *</label>
+              <input type="text" class="form-control" id="inputState" placeholder="Alabama">
+            </div> <!-- //.form-group -->
+            <div class="form-group col-lg-4">
+              <label for="inputZip">ZIP/POSTAL CODE</label>
+              <input type="text" class="form-control" id="inputZip" placeholder="ZIP/POSTAL CODE">
+            </div> <!-- //.form-group -->
+            <div class="form-group col-lg-12 mt-3">
+              <label for="inputNote">NOTE</label>
+              <textarea type="text" class="form-control" id="inputNote"
+                placeholder="Add special instructions for your order..."></textarea>
+            </div> <!-- //.form-group -->
+          </div> <!-- //.row -->
+        </form>
+      </div> <!-- //.order-wrapper -->
+      <div class="cart-bottom">
+        <div class="row justify-content-end">
+          <div class="col-lg-4">
+            <dl class="cart-subtotal">
+              <dt>SUBTOTAL</dt>
+              <dd>$16.00</dd>
+            </dl>
+            <dl class="cart-total">
+              <dt>GRAND TOTAL</dt>
+              <dd>$16.00</dd>
+            </dl>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="acceptCheckbox">
+              <label class="custom-control-label" for="acceptCheckbox">I agree with the terms and conditions</label>
+            </div>
+            <button type="button" class="btn btn-default">Сheckout</button>
+          </div> <!-- //.col -->
+        </div> <!-- //.row -->
+      </div> <!-- //.cart-bottom -->
+    </div> <!-- //.container -->
+  </section>
+
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="footer-title">CATEGORIES</h3>
+            <ul class="footer-menu">
+              <li><a href="#">SET Solutions</a></li>
+              <li><a href="#">Lifting Threads</a></li>
+              <li><a href="#">Biorevitalization</a></li>
+              <li><a href="#">Cosmetology</a></li>
+              <li><a href="#">Derma filler</a></li>
+              <li><a href="#">Devices</a></li>
+              <li><a href="#">Fat dissolving</a></li>
+              <li><a href="#">Hair Treatment</a></li>
+              <li><a href="#">Injection</a></li>
+              <li><a href="#">Other Categories</a></li>
+            </ul>
+          </div> <!-- //.col -->
+          <div class="col">
+            <h3 class="footer-title">BUY WITH US</h3>
+            <ul class="footer-menu">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Shipping Information</a></li>
+              <li><a href="#">WHOLESALE</a></li>
+            </ul>
+          </div> <!-- //.col -->
+          <div class="col-md-3">
+            <h3 class="footer-title">CONTACTS</h3>
+            <ul class="footer-contacts">
+              <li>Address: Seoul, 528, Teheran-ro, Gangnam-gu, 02427, South Korea</li>
+              <li>Phone: +82 10 5933 5535</li>
+              <li>Hours: MON-FRI FROM 9 AM TO 7 PM</li>
+              <li>E-mail: info@fillerhouse.com</li>
+            </ul>
+          </div> <!-- //.col -->
+          <div class="col">
+            <h3 class="footer-title">NEWSLETTER SIGNUP</h3>
+            <p>Sign up for our e-mail and be the first who know our special offers! Furthermore, we will give a 10%
+              discount on the next order after you sign up.</p>
+          </div> <!-- //.col -->
+        </div> <!-- //.row -->
+      </div> <!-- //.container -->
+    </div> <!-- //.footer -->
+    <div class="footer-copyright">
+      &copy; FillerHouse.com 2020. All Rights Reserved
+    </div> <!-- //.footer-copyright -->
+  </footer>
+
+</body>
+
+</html>
