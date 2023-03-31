@@ -1,0 +1,11 @@
+.top-header {
+  text-align: center;
+  background-color: #2d4046;
+  color: white;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+}
+.slider-wrapper {
+  width: 100%;
+}
